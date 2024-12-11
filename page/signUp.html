@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+  <div
+  class="container-fluid d-flex flex-column align-content-center justify-content-center bg-body-secondary vh-100"
+>
+  <div class="">
+    <form class="w-50 mx-auto bg-info-subtle text-center rounded-2 p-3">
+      <h1 class="my-5">Smart Login System</h1>
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="nameSignup"
+          placeholder="Enter your name"
+        />
+        <label for="nameSignup">Your Name</label>
+
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="email"
+          class="form-control"
+          id="emailSignup"
+          placeholder="name@example.com"
+       
+ 
+        />
+        <label for="emailSignup">Email address</label>
+      </div>
+       <div class="form-floating">
+        <input
+          type="password"
+          class="form-control"
+          id="signupPassword"
+          placeholder="Password"
+          autocomplete="email"
+     
+        />
+        
+        <label for="signupPassword">Password</label>
+      </div> 
+      <p id="alertSig" class="alert alert-primary mt-1 d-none">Please follow the rules
+        <span class="d-block">Name: At least 3 character</span>
+        <span class="d-block">Email: must includes special character like "@,$,£,#"</span>
+        <span class="d-block">Password: At least 4 character & apecial character</span>
+      </p>
+      <p id="emailex" class="text-bg-danger d-none">the Email is already exists</p>
+
+      <button id="signUpBtn" type="submit" class="btn btn-outline-info w-100 my-3">
+        Login
+      </button>
+      <p>
+        You hava an account?
+        <a href="../index.html" class="text-info text-decoration-none"
+          >Signin</a
+        >
+      </p>
+    </form>
+  </div>
+</div>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/signUp.js"></script>
+</body>
+</html>

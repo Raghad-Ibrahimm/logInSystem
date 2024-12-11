@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div
+      class="container-fluid d-flex flex-column align-content-center justify-content-center vh-100 mybg"
+    >
+      <div class="mybg">
+        <form class="w-50 mx-auto bg-dark-subtle text-center p-4 rounded-1">
+          <h1 class="my-5">Smart Login System</h1>
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="emailLogin"
+              placeholder="name@example.com"
+            />
+            <label for="emailLogin">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="PasswordLogin"
+              placeholder="Password"
+            />
+            <label for="PasswordLogin">Password</label>
+          </div>
+          <button id="btn" type="submit" class="btn btn-outline-info w-100 mt-5 mb-3">
+            Login
+          </button>
+          <p>
+            You do not hava an account?
+            <a href="./page/signUp.html" class="text-white text-decoration-none"
+              >Sign Up</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
